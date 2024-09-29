@@ -1,0 +1,33 @@
+==52106== Memcheck, a memory error detector
+==52106== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==52106== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==52106== Command: ./Q1 -v 6 -e 6 -s 42
+==52106== 
+Eulerian Circuit: 0 -> 5 -> 4 -> 3 -> 2 -> 1 -> 0
+==52106== 
+==52106== Process terminating with default action of signal 27 (SIGPROF)
+==52106==    at 0x4BD2A1A: __open_nocancel (open64_nocancel.c:39)
+==52106==    by 0x4BE156F: write_gmon (gmon.c:370)
+==52106==    by 0x4BE1DDE: _mcleanup (gmon.c:444)
+==52106==    by 0x4AFEA55: __cxa_finalize (cxa_finalize.c:83)
+==52106==    by 0x1094A6: ??? (in /home/adi/Desktop/OS_EX4/Q1)
+==52106==    by 0x400624D: _dl_fini (dl-fini.c:142)
+==52106==    by 0x4AFE494: __run_exit_handlers (exit.c:113)
+==52106==    by 0x4AFE60F: exit (exit.c:143)
+==52106==    by 0x4AE2D96: (below main) (libc_start_call_main.h:74)
+==52106== 
+==52106== HEAP SUMMARY:
+==52106==     in use at exit: 127,488 bytes in 3 blocks
+==52106==   total heap usage: 23 allocs, 20 frees, 128,564 bytes allocated
+==52106== 
+==52106== LEAK SUMMARY:
+==52106==    definitely lost: 0 bytes in 0 blocks
+==52106==    indirectly lost: 0 bytes in 0 blocks
+==52106==      possibly lost: 0 bytes in 0 blocks
+==52106==    still reachable: 127,488 bytes in 3 blocks
+==52106==         suppressed: 0 bytes in 0 blocks
+==52106== Reachable blocks (those to which a pointer was found) are not shown.
+==52106== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==52106== 
+==52106== For lists of detected and suppressed errors, rerun with: -s
+==52106== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

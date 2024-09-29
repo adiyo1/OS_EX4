@@ -1,0 +1,306 @@
+--------------------------------------------------------------------------------
+Profile data file 'callgrind.out.52125' (creator: callgrind-3.18.1)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 0 - 404733
+Trigger: Program termination
+Profiled target:  ./Q1 -v 6 -e 6 -s 42 (PID 52125, part 1)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                 
+--------------------------------------------------------------------------------
+2,507,022 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                file:function
+--------------------------------------------------------------------------------
+982,059 (39.17%)  ./elf/./elf/dl-lookup.c:_dl_lookup_symbol_x [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+570,522 (22.76%)  ./elf/./elf/dl-lookup.c:do_lookup_x [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+261,031 (10.41%)  ./elf/../sysdeps/x86_64/dl-machine.h:_dl_relocate_object
+119,289 ( 4.76%)  ./elf/./elf/dl-lookup.c:check_match [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+108,798 ( 4.34%)  ./elf/./elf/do-rel.h:_dl_relocate_object
+ 74,922 ( 2.99%)  ./string/../sysdeps/x86_64/strcmp.S:strcmp [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+ 66,276 ( 2.64%)  ./gmon/./gmon/mcount.c:__mcount_internal [/usr/lib/x86_64-linux-gnu/libc.so.6]
+ 51,891 ( 2.07%)  ./gmon/../sysdeps/x86_64/_mcount.S:mcount [/usr/lib/x86_64-linux-gnu/libc.so.6]
+ 24,156 ( 0.96%)  ./elf/./elf/dl-tunables.c:__GI___tunables_init [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+ 19,825 ( 0.79%)  ./elf/../sysdeps/generic/dl-protected.h:do_lookup_x
+ 12,128 ( 0.48%)  ???:std::locale::_Impl::_M_install_facet(std::locale::id const*, std::locale::facet const*) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30]
+ 11,964 ( 0.48%)  ./elf/./elf/dl-version.c:_dl_check_map_versions [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+ 10,975 ( 0.44%)  ./elf/../sysdeps/generic/ldsodefs.h:do_lookup_x
+ 10,240 ( 0.41%)  ./wcsmbs/./wcsmbs/btowc.c:btowc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+ 10,209 ( 0.41%)  ./elf/../sysdeps/generic/ldsodefs.h:_dl_relocate_object
+  8,088 ( 0.32%)  ./elf/./elf/dl-runtime.c:_dl_fixup [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  6,830 ( 0.27%)  ./stdlib/./stdlib/random_r.c:srandom_r [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  5,579 ( 0.22%)  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_sse2_unaligned [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  4,192 ( 0.17%)  ./elf/../sysdeps/x86/dl-cacheinfo.h:intel_check_word.constprop.0 [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  4,166 ( 0.17%)  ./elf/./elf/dl-reloc.c:_dl_relocate_object [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  4,086 ( 0.16%)  ./elf/../bits/stdlib-bsearch.h:intel_check_word.constprop.0
+  3,782 ( 0.15%)  ./elf/./elf/dl-load.c:_dl_map_object_from_fd [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  3,494 ( 0.14%)  ./elf/./elf/dl-cache.c:_dl_cache_libcmp [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  3,456 ( 0.14%)  ./wcsmbs/./wcsmbs/wctob.c:wctob [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  3,036 ( 0.12%)  ./malloc/./malloc/malloc.c:_int_malloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  2,848 ( 0.11%)  ./elf/./elf/dl-misc.c:_dl_name_match_p [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  2,733 ( 0.11%)  ???:std::ctype<wchar_t>::_M_initialize_ctype() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30]
+  2,494 ( 0.10%)  ./elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_fxsave [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  2,243 ( 0.09%)  ./elf/./elf/dl-load.c:_dl_map_object [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  2,226 ( 0.09%)  ./elf/./elf/dl-deps.c:_dl_map_object_deps [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  2,041 ( 0.08%)  ./elf/./elf/dl-tunables.h:__GI___tunables_init
+  1,586 ( 0.06%)  ./string/../sysdeps/x86_64/multiarch/memcmp-sse4.S:__memcmp_sse4_1 [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  1,492 ( 0.06%)  ./elf/./elf/get-dynamic-info.h:_dl_map_object_from_fd
+  1,481 ( 0.06%)  ./elf/./elf/dl-load.c:open_verify.constprop.0 [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  1,404 ( 0.06%)  ./malloc/./malloc/malloc.c:_int_free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  1,327 ( 0.05%)  ./string/../sysdeps/x86_64/multiarch/strlen-vec.S:__strlen_sse2 [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  1,326 ( 0.05%)  ???:std::_List_iterator<int>::_List_iterator(std::__detail::_List_node_base*) [/home/adi/Desktop/OS_EX4/Q1]
+  1,308 ( 0.05%)  ./elf/./elf/rtld.c:dl_main [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  1,260 ( 0.05%)  ???:std::__cxx11::list<int, std::allocator<int> >::remove(int const&) [/home/adi/Desktop/OS_EX4/Q1]
+  1,250 ( 0.05%)  ./elf/./elf/dl-cache.c:_dl_load_cache_lookup [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  1,187 ( 0.05%)  ./elf/./elf/dl-load.c:open_path [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  1,129 ( 0.05%)  ./elf/./elf/dl-object.c:_dl_new_object [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  1,115 ( 0.04%)  ./elf/./elf/dl-minimal-malloc.c:__minimal_malloc [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  1,036 ( 0.04%)  ./wctype/./wctype/wctype_l.c:wctype_l [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  1,000 ( 0.04%)  ???:std::_Bit_iterator_base::_M_incr(long) [/home/adi/Desktop/OS_EX4/Q1]
+    996 ( 0.04%)  ???:std::__cxx11::list<int, std::allocator<int> >::splice(std::_List_const_iterator<int>, std::__cxx11::list<int, std::allocator<int> >&&, std::_List_const_iterator<int>) [/home/adi/Desktop/OS_EX4/Q1]
+    990 ( 0.04%)  ???:std::locale::id::_M_id() const [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30]
+    969 ( 0.04%)  ???:std::vector<std::__cxx11::list<int, std::allocator<int> >, std::allocator<std::__cxx11::list<int, std::allocator<int> > > >::operator[](unsigned long) [/home/adi/Desktop/OS_EX4/Q1]
+    950 ( 0.04%)  ./malloc/./malloc/malloc.c:malloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    896 ( 0.04%)  ./wcsmbs/./wcsmbsload.h:btowc
+    883 ( 0.04%)  ./elf/../sysdeps/x86_64/dl-machine.h:_dl_start
+    841 ( 0.03%)  ./string/../sysdeps/x86_64/multiarch/strlen-vec.S:strlen [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    838 ( 0.03%)  ./libio/./libio/fileops.c:_IO_file_xsputn@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    820 ( 0.03%)  ???:Graph::findEulerianCircuit() [/home/adi/Desktop/OS_EX4/Q1]
+    816 ( 0.03%)  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:memset [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    815 ( 0.03%)  ./elf/./elf/do-rel.h:_dl_start
+    776 ( 0.03%)  ./malloc/./malloc/malloc.c:ptmalloc_init.part.0
+    775 ( 0.03%)  ???:std::operator+(std::_Bit_iterator const&, long) [/home/adi/Desktop/OS_EX4/Q1]
+    774 ( 0.03%)  ./elf/../sysdeps/nptl/dl-tls_init_tp.c:rtld_mutex_dummy [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    768 ( 0.03%)  ./elf/./elf/dl-profstub.c:_dl_mcount_wrapper_check [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    768 ( 0.03%)  ./iconv/./iconv/gconv_simple.c:__gconv_btwoc_ascii [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    756 ( 0.03%)  ???:std::_List_const_iterator<int>::_M_const_cast() const [/home/adi/Desktop/OS_EX4/Q1]
+    756 ( 0.03%)  ???:std::__cxx11::list<int, std::allocator<int> >::begin() [/home/adi/Desktop/OS_EX4/Q1]
+    755 ( 0.03%)  ./libio/./libio/iofwrite.c:fwrite [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    745 ( 0.03%)  ./elf/./dl-map-segments.h:_dl_map_object_from_fd
+    744 ( 0.03%)  ./string/../sysdeps/x86_64/multiarch/../strchr.S:index [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    740 ( 0.03%)  ./elf/./elf/dl-tunables.c:__tunable_get_val [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    732 ( 0.03%)  ???:std::ctype<char>::_M_widen_init() const [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30]
+    720 ( 0.03%)  ???:int const& std::forward<int const&>(std::remove_reference<int const&>::type&) [/home/adi/Desktop/OS_EX4/Q1]
+    720 ( 0.03%)  ???:std::_List_node<int>::_M_valptr() [/home/adi/Desktop/OS_EX4/Q1]
+    720 ( 0.03%)  ???:std::operator!=(std::_List_iterator<int> const&, std::_List_iterator<int> const&) [/home/adi/Desktop/OS_EX4/Q1]
+    708 ( 0.03%)  ./elf/../sysdeps/x86/dl-cacheinfo.h:handle_intel.constprop.0 [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    705 ( 0.03%)  ./libio/./libio/fileops.c:_IO_file_overflow@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    694 ( 0.03%)  ./elf/./elf/dl-hwcaps.c:_dl_important_hwcaps [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    682 ( 0.03%)  ./stdlib/./stdlib/getenv.c:getenv [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    666 ( 0.03%)  ???:std::locale::_Impl::_Impl(unsigned long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30]
+    660 ( 0.03%)  ???:__gnu_cxx::__aligned_membuf<int>::_M_ptr() [/home/adi/Desktop/OS_EX4/Q1]
+    657 ( 0.03%)  ???:std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30]
+    648 ( 0.03%)  ???:std::_Bit_iterator::operator*() const [/home/adi/Desktop/OS_EX4/Q1]
+    648 ( 0.03%)  ???:std::vector<bool, std::allocator<bool> >::begin() [/home/adi/Desktop/OS_EX4/Q1]
+    636 ( 0.03%)  ???:std::_List_node<int>* std::__cxx11::list<int, std::allocator<int> >::_M_create_node<int const&>(int const&) [/home/adi/Desktop/OS_EX4/Q1]
+    606 ( 0.02%)  ???:std::__cxx11::_List_base<int, std::allocator<int> >::_M_clear() [/home/adi/Desktop/OS_EX4/Q1]
+    600 ( 0.02%)  ???:std::_Bit_iterator::operator[](long) const [/home/adi/Desktop/OS_EX4/Q1]
+    600 ( 0.02%)  ???:std::__cxx11::list<int, std::allocator<int> >::end() [/home/adi/Desktop/OS_EX4/Q1]
+    600 ( 0.02%)  ???:std::vector<bool, std::allocator<bool> >::operator[](unsigned long) [/home/adi/Desktop/OS_EX4/Q1]
+    593 ( 0.02%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:memcpy [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    592 ( 0.02%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:mempcpy [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    588 ( 0.02%)  ???:std::_List_iterator<int>::operator++() [/home/adi/Desktop/OS_EX4/Q1]
+    579 ( 0.02%)  ???:Graph::dfs(int, std::vector<bool, std::allocator<bool> >&)'2 [/home/adi/Desktop/OS_EX4/Q1]
+    540 ( 0.02%)  ???:__gnu_cxx::__aligned_membuf<int>::_M_addr() [/home/adi/Desktop/OS_EX4/Q1]
+    530 ( 0.02%)  ./elf/./elf/dl-sort-maps.c:dfs_traversal.part.0 [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    517 ( 0.02%)  ???:0x00000000048f6a60 [???]
+    504 ( 0.02%)  ???:std::_List_const_iterator<int>::_List_const_iterator(std::_List_iterator<int> const&) [/home/adi/Desktop/OS_EX4/Q1]
+    502 ( 0.02%)  ./elf/../sysdeps/x86/dl-prop.h:_dl_map_object_from_fd
+    494 ( 0.02%)  ./elf/../elf/dl-sysdep.c:_dl_sysdep_start [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    493 ( 0.02%)  ???:std::_Bit_iterator_base::_Bit_iterator_base(unsigned long*, unsigned int) [/home/adi/Desktop/OS_EX4/Q1]
+    472 ( 0.02%)  ./posix/./posix/getopt.c:_getopt_internal_r [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    468 ( 0.02%)  ./stdlib/./stdlib/cxa_atexit.c:__cxa_atexit [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    465 ( 0.02%)  ???:std::vector<int, std::allocator<int> >::size() const [/home/adi/Desktop/OS_EX4/Q1]
+    464 ( 0.02%)  ???:std::ios_base::ios_base() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30]
+    448 ( 0.02%)  ???:void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [/home/adi/Desktop/OS_EX4/Q1]
+    444 ( 0.02%)  ???:std::ostream::sentry::sentry(std::ostream&) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30]
+    440 ( 0.02%)  ./malloc/./malloc/malloc.c:free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    436 ( 0.02%)  ./elf/./dl-find_object.h:_dl_find_object_from_map [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    432 ( 0.02%)  ???:std::_List_iterator<int>::operator*() const [/home/adi/Desktop/OS_EX4/Q1]
+    432 ( 0.02%)  ???:std::__cxx11::_List_base<int, std::allocator<int> >::_M_get_Node_allocator() [/home/adi/Desktop/OS_EX4/Q1]
+    428 ( 0.02%)  ./stdlib/./stdlib/cxa_atexit.c:__new_exitfn [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    425 ( 0.02%)  ???:std::_Bit_iterator::_Bit_iterator(unsigned long*, unsigned int) [/home/adi/Desktop/OS_EX4/Q1]
+    421 ( 0.02%)  ./elf/./elf/dl-init.c:call_init.part.0 [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    420 ( 0.02%)  ./elf/./elf/dl-error-skeleton.c:_dl_catch_exception [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    417 ( 0.02%)  ???:std::ostream& std::ostream::_M_insert<long>(long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30]
+    414 ( 0.02%)  ???:std::__cxx11::numpunct<char>::_M_initialize_numpunct(__locale_struct*) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30]
+    414 ( 0.02%)  ???:std::numpunct<char>::_M_initialize_numpunct(__locale_struct*) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30]
+    408 ( 0.02%)  ???:std::_Bit_reference::_Bit_reference(unsigned long*, unsigned long) [/home/adi/Desktop/OS_EX4/Q1]
+    396 ( 0.02%)  ./io/../sysdeps/unix/sysv/linux/open64_nocancel.c:__open_nocancel [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    392 ( 0.02%)  ./elf/./elf/dl-hwcaps_split.c:_dl_hwcaps_split_masked [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    392 ( 0.02%)  ???:std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30]
+    384 ( 0.02%)  ???:std::__cxx11::_List_base<int, std::allocator<int> >::_M_inc_size(unsigned long) [/home/adi/Desktop/OS_EX4/Q1]
+    382 ( 0.02%)  ./malloc/./malloc/malloc.c:malloc_consolidate [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    375 ( 0.01%)  ???:std::_Bit_iterator::operator+=(long) [/home/adi/Desktop/OS_EX4/Q1]
+    374 ( 0.01%)  ???:std::locale::locale() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30]
+    372 ( 0.01%)  ???:std::__cxx11::list<int, std::allocator<int> >::list(std::allocator<int> const&) [/home/adi/Desktop/OS_EX4/Q1]
+    360 ( 0.01%)  ???:std::allocator<std::_List_node<int> >::~allocator() [/home/adi/Desktop/OS_EX4/Q1]
+    360 ( 0.01%)  ???:std::operator==(std::_List_const_iterator<int> const&, std::_List_const_iterator<int> const&) [/home/adi/Desktop/OS_EX4/Q1]
+    350 ( 0.01%)  ./elf/../elf/dl-tls.c:_dl_allocate_tls_storage [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    350 ( 0.01%)  ???:std::__cxx11::numpunct<wchar_t>::_M_initialize_numpunct(__locale_struct*) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30]
+    350 ( 0.01%)  ???:std::numpunct<wchar_t>::_M_initialize_numpunct(__locale_struct*) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30]
+    348 ( 0.01%)  ???:void std::__cxx11::list<int, std::allocator<int> >::_M_insert<int const&>(std::_List_iterator<int>, int const&) [/home/adi/Desktop/OS_EX4/Q1]
+    344 ( 0.01%)  ./elf/./elf/dl-sort-maps.c:_dl_sort_maps [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    343 ( 0.01%)  ./elf/./elf/dl-environ.c:_dl_next_ld_env_entry [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    342 ( 0.01%)  ./elf/./get-dynamic-info.h:dl_main
+    336 ( 0.01%)  ???:__gnu_cxx::new_allocator<std::_List_node<int> >::allocate(unsigned long, void const*) [/home/adi/Desktop/OS_EX4/Q1]
+    330 ( 0.01%)  ./libio/./libio/iofflush.c:fflush [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    324 ( 0.01%)  ???:std::__detail::_List_node_header::_M_init() [/home/adi/Desktop/OS_EX4/Q1]
+    322 ( 0.01%)  ./stdlib/../stdlib/strtol_l.c:____strtol_l_internal [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    320 ( 0.01%)  ???:operator new(unsigned long, void*) [/home/adi/Desktop/OS_EX4/Q1]
+    312 ( 0.01%)  ./elf/./elf/dl-load.c:_dl_init_paths [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    310 ( 0.01%)  ./setjmp/../sysdeps/x86_64/setjmp.S:__sigsetjmp [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    308 ( 0.01%)  ???:void __gnu_cxx::new_allocator<int>::construct<int, int const&>(int*, int const&) [/home/adi/Desktop/OS_EX4/Q1]
+    300 ( 0.01%)  ./libio/./libio/genops.c:_IO_default_xsputn [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    294 ( 0.01%)  ???:0x00000000000dc6c0 [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30]
+    288 ( 0.01%)  ???:std::_Bit_reference::operator bool() const [/home/adi/Desktop/OS_EX4/Q1]
+    288 ( 0.01%)  ???:std::__cxx11::list<int, std::allocator<int> >::_M_check_equal_allocators(std::__cxx11::list<int, std::allocator<int> >&) [/home/adi/Desktop/OS_EX4/Q1]
+    280 ( 0.01%)  ???:void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std::allocator<int>&, int*, int const&) [/home/adi/Desktop/OS_EX4/Q1]
+    278 ( 0.01%)  ./elf/./elf/dl-find_object.c:_dlfo_process_initial [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    278 ( 0.01%)  ???:__cpu_indicator_init [/usr/lib/x86_64-linux-gnu/libgcc_s.so.1]
+    276 ( 0.01%)  ???:std::__cxx11::list<int, std::allocator<int> >::splice(std::_List_const_iterator<int>, std::__cxx11::list<int, std::allocator<int> >&, std::_List_const_iterator<int>) [/home/adi/Desktop/OS_EX4/Q1]
+    273 ( 0.01%)  ???:std::ios_base::Init::Init() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30]
+    270 ( 0.01%)  ???:__gnu_cxx::new_allocator<std::_List_node<int> >::~new_allocator() [/home/adi/Desktop/OS_EX4/Q1]
+    270 ( 0.01%)  ???:std::__cxx11::_List_base<int, std::allocator<int> >::~_List_base() [/home/adi/Desktop/OS_EX4/Q1]
+    268 ( 0.01%)  ./elf/./elf/dl-lookup-direct.c:_dl_lookup_direct [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    265 ( 0.01%)  ./elf/./elf/dl-object.c:_dl_add_to_namespace_list [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    264 ( 0.01%)  ???:int* std::__relocate_a<int*, int*, std::allocator<int> >(int*, int*, int*, std::allocator<int>&) [/home/adi/Desktop/OS_EX4/Q1]
+    264 ( 0.01%)  ???:void __gnu_cxx::new_allocator<std::_List_node<int> >::construct<int, int const&>(int*, int const&) [/home/adi/Desktop/OS_EX4/Q1]
+    261 ( 0.01%)  ???:0x00000000048f4f30 [???]
+    252 ( 0.01%)  ???:std::__cxx11::_List_base<int, std::allocator<int> >::_List_impl::_List_impl(std::allocator<std::_List_node<int> >&&) [/home/adi/Desktop/OS_EX4/Q1]
+    251 ( 0.01%)  ./elf/./elf/dl-load.c:open_verify.constprop.1 [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    248 ( 0.01%)  ./elf/./elf/dl-find_object.c:_dlfo_sort_mappings [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    248 ( 0.01%)  ./elf/./elf/dl-minimal.c:strsep [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    245 ( 0.01%)  ./elf/./elf/dl-tunables.c:__GI___tunable_set_val [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    244 ( 0.01%)  ./elf/../sysdeps/x86/dl-prop.h:dl_main
+    243 ( 0.01%)  ./elf/./get-dynamic-info.h:_dl_start
+    240 ( 0.01%)  ???:__gnu_cxx::new_allocator<std::_List_node<int> >::deallocate(std::_List_node<int>*, unsigned long) [/home/adi/Desktop/OS_EX4/Q1]
+    240 ( 0.01%)  ???:operator new(unsigned long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30]
+    240 ( 0.01%)  ???:void std::allocator_traits<std::allocator<std::_List_node<int> > >::construct<int, int const&>(std::allocator<std::_List_node<int> >&, int*, int const&) [/home/adi/Desktop/OS_EX4/Q1]
+    238 ( 0.01%)  ./libio/./libio/libioP.h:fwrite
+    236 ( 0.01%)  ???:std::vector<int, std::allocator<int> >::_M_check_len(unsigned long, char const*) const [/home/adi/Desktop/OS_EX4/Q1]
+    234 ( 0.01%)  ./misc/../sysdeps/unix/sysv/linux/mmap64.c:mmap [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    234 ( 0.01%)  ???:std::_Deque_iterator<int, int&, int*>::_Deque_iterator(std::_Deque_iterator<int, int&, int*> const&) [/home/adi/Desktop/OS_EX4/Q1]
+    233 ( 0.01%)  ./string/../sysdeps/x86_64/strcspn.S:strcspn [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    228 ( 0.01%)  ???:std::__allocated_ptr<std::allocator<std::_List_node<int> > >::__allocated_ptr(std::allocator<std::_List_node<int> >&, std::_List_node<int>*) [/home/adi/Desktop/OS_EX4/Q1]
+    228 ( 0.01%)  ???:std::__cxx11::_List_base<int, std::allocator<int> >::_List_base(std::allocator<std::_List_node<int> >&&) [/home/adi/Desktop/OS_EX4/Q1]
+    228 ( 0.01%)  ???:std::__cxx11::list<int, std::allocator<int> >::push_back(int const&) [/home/adi/Desktop/OS_EX4/Q1]
+    217 ( 0.01%)  ???:std::deque<int, std::allocator<int> >::pop_back() [/home/adi/Desktop/OS_EX4/Q1]
+    216 ( 0.01%)  ???:int* std::__niter_base<int*>(int*) [/home/adi/Desktop/OS_EX4/Q1]
+    216 ( 0.01%)  ???:std::__cxx11::_List_base<int, std::allocator<int> >::_List_impl::~_List_impl() [/home/adi/Desktop/OS_EX4/Q1]
+    216 ( 0.01%)  ???:std::__cxx11::list<int, std::allocator<int> >* std::__addressof<std::__cxx11::list<int, std::allocator<int> > >(std::__cxx11::list<int, std::allocator<int> >&) [/home/adi/Desktop/OS_EX4/Q1]
+    216 ( 0.01%)  ???:std::__cxx11::list<int, std::allocator<int> >::_M_transfer(std::_List_iterator<int>, std::_List_iterator<int>, std::_List_iterator<int>) [/home/adi/Desktop/OS_EX4/Q1]
+    216 ( 0.01%)  ???:std::__cxx11::list<int, std::allocator<int> >::get_allocator() const [/home/adi/Desktop/OS_EX4/Q1]
+    216 ( 0.01%)  ???:std::__cxx11::list<int, std::allocator<int> >::~list() [/home/adi/Desktop/OS_EX4/Q1]
+    216 ( 0.01%)  ???:std::__detail::_List_node_header::_List_node_header() [/home/adi/Desktop/OS_EX4/Q1]
+    216 ( 0.01%)  ???:std::remove_reference<std::allocator<std::_List_node<int> >&>::type&& std::move<std::allocator<std::_List_node<int> >&>(std::allocator<std::_List_node<int> >&) [/home/adi/Desktop/OS_EX4/Q1]
+    215 ( 0.01%)  ./elf/../sysdeps/x86/dl-cacheinfo.h:get_common_cache_info.constprop.0 [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    210 ( 0.01%)  ???:Graph::addEdge(int, int) [/home/adi/Desktop/OS_EX4/Q1]
+    210 ( 0.01%)  ???:Graph::removeEdge(int, int) [/home/adi/Desktop/OS_EX4/Q1]
+    210 ( 0.01%)  ???:std::deque<int, std::allocator<int> >::empty() const [/home/adi/Desktop/OS_EX4/Q1]
+    210 ( 0.01%)  ???:std::deque<int, std::allocator<int> >::push_back(int const&) [/home/adi/Desktop/OS_EX4/Q1]
+    210 ( 0.01%)  ???:std::operator==(std::_Deque_iterator<int, int&, int*> const&, std::_Deque_iterator<int, int&, int*> const&) [/home/adi/Desktop/OS_EX4/Q1]
+    208 ( 0.01%)  ???:std::ios_base::_M_init() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30]
+    208 ( 0.01%)  ???:std::vector<int, std::allocator<int> >::_S_max_size(std::allocator<int> const&) [/home/adi/Desktop/OS_EX4/Q1]
+    207 ( 0.01%)  ./elf/../sysdeps/x86/dl-cacheinfo.h:init_cpu_features.constprop.0
+    204 ( 0.01%)  ???:Graph::isConnected() [/home/adi/Desktop/OS_EX4/Q1]
+    204 ( 0.01%)  ???:std::allocator_traits<std::allocator<std::_List_node<int> > >::deallocate(std::allocator<std::_List_node<int> >&, std::_List_node<int>*, unsigned long) [/home/adi/Desktop/OS_EX4/Q1]
+    203 ( 0.01%)  ./elf/./elf/dl-setup_hash.c:_dl_setup_hash [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    202 ( 0.01%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__mempcpy_sse2_unaligned [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    198 ( 0.01%)  ./elf/./elf/dl-deps.c:openaux [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    198 ( 0.01%)  ./elf/./elf/dl-load.c:_dl_dst_count [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    198 ( 0.01%)  ./libio/./libio/fileops.c:_IO_file_sync@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    198 ( 0.01%)  ./libio/./libio/libioP.h:fflush
+    196 ( 0.01%)  ???:0x00000000000c2320 [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30]
+    195 ( 0.01%)  ???:std::__cxx11::list<int, std::allocator<int> >::empty() const [/home/adi/Desktop/OS_EX4/Q1]
+    192 ( 0.01%)  ???:std::__cxx11::_List_base<int, std::allocator<int> >::_M_dec_size(unsigned long) [/home/adi/Desktop/OS_EX4/Q1]
+    192 ( 0.01%)  ???:std::__cxx11::_List_base<int, std::allocator<int> >::_M_put_node(std::_List_node<int>*) [/home/adi/Desktop/OS_EX4/Q1]
+    192 ( 0.01%)  ???:unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&) [/home/adi/Desktop/OS_EX4/Q1]
+    191 ( 0.01%)  ???:0x00000000048f46b0 [???]
+    189 ( 0.01%)  ???:std::enable_if<std::__is_bitwise_relocatable<int, void>::value, int*>::type std::__relocate_a_1<int, int>(int*, int*, int*, std::allocator<int>&) [/home/adi/Desktop/OS_EX4/Q1]
+    187 ( 0.01%)  ./elf/./elf/dl-fini.c:_dl_fini [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    187 ( 0.01%)  ???:std::vector<int, std::allocator<int> >::push_back(int const&) [/home/adi/Desktop/OS_EX4/Q1]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./elf/../bits/stdlib-bsearch.h
+  ./elf/../elf/dl-sysdep.c
+  ./elf/../elf/dl-tls.c
+  ./elf/../sysdeps/generic/dl-protected.h
+  ./elf/../sysdeps/generic/ldsodefs.h
+  ./elf/../sysdeps/nptl/dl-tls_init_tp.c
+  ./elf/../sysdeps/x86/dl-cacheinfo.h
+  ./elf/../sysdeps/x86/dl-prop.h
+  ./elf/../sysdeps/x86_64/dl-machine.h
+  ./elf/../sysdeps/x86_64/dl-trampoline.h
+  ./elf/./dl-find_object.h
+  ./elf/./dl-map-segments.h
+  ./elf/./elf/dl-cache.c
+  ./elf/./elf/dl-deps.c
+  ./elf/./elf/dl-environ.c
+  ./elf/./elf/dl-error-skeleton.c
+  ./elf/./elf/dl-find_object.c
+  ./elf/./elf/dl-fini.c
+  ./elf/./elf/dl-hwcaps.c
+  ./elf/./elf/dl-hwcaps_split.c
+  ./elf/./elf/dl-init.c
+  ./elf/./elf/dl-load.c
+  ./elf/./elf/dl-lookup-direct.c
+  ./elf/./elf/dl-lookup.c
+  ./elf/./elf/dl-minimal-malloc.c
+  ./elf/./elf/dl-minimal.c
+  ./elf/./elf/dl-misc.c
+  ./elf/./elf/dl-object.c
+  ./elf/./elf/dl-profstub.c
+  ./elf/./elf/dl-reloc.c
+  ./elf/./elf/dl-runtime.c
+  ./elf/./elf/dl-setup_hash.c
+  ./elf/./elf/dl-sort-maps.c
+  ./elf/./elf/dl-tunables.c
+  ./elf/./elf/dl-tunables.h
+  ./elf/./elf/dl-version.c
+  ./elf/./elf/do-rel.h
+  ./elf/./elf/get-dynamic-info.h
+  ./elf/./elf/rtld.c
+  ./elf/./get-dynamic-info.h
+  ./gmon/../sysdeps/x86_64/_mcount.S
+  ./gmon/./gmon/mcount.c
+  ./iconv/./iconv/gconv_simple.c
+  ./io/../sysdeps/unix/sysv/linux/open64_nocancel.c
+  ./libio/./libio/fileops.c
+  ./libio/./libio/genops.c
+  ./libio/./libio/iofflush.c
+  ./libio/./libio/iofwrite.c
+  ./libio/./libio/libioP.h
+  ./malloc/./malloc/malloc.c
+  ./misc/../sysdeps/unix/sysv/linux/mmap64.c
+  ./posix/./posix/getopt.c
+  ./setjmp/../sysdeps/x86_64/setjmp.S
+  ./stdlib/../stdlib/strtol_l.c
+  ./stdlib/./stdlib/cxa_atexit.c
+  ./stdlib/./stdlib/getenv.c
+  ./stdlib/./stdlib/random_r.c
+  ./string/../sysdeps/x86_64/multiarch/../strchr.S
+  ./string/../sysdeps/x86_64/multiarch/memcmp-sse4.S
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
+  ./string/../sysdeps/x86_64/multiarch/strlen-vec.S
+  ./string/../sysdeps/x86_64/strcmp.S
+  ./string/../sysdeps/x86_64/strcspn.S
+  ./wcsmbs/./wcsmbs/btowc.c
+  ./wcsmbs/./wcsmbs/wctob.c
+  ./wcsmbs/./wcsmbsload.h
+  ./wctype/./wctype/wctype_l.c
+
